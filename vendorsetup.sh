@@ -39,6 +39,11 @@ export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/13540000.dwmmc0/by-na
 export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM"
 export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/VENDOR"
 
+# Flashlight
+export OF_FLASHLIGHT_ENABLE="1"
+export OF_FL_PATH1="/system/flashlight"
+export OF_USE_GREEN_LED="0"
+
 export FOX_ASH_IS_BASH="1"
 export FOX_REPLACE_BUSYBOX_PS="1"
 export FOX_USE_BASH_SHELL="1"
@@ -51,8 +56,6 @@ export LZMA_RAMDISK_TARGETS="recovery"
 export OF_AB_DEVICE="0"
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES="1"
 export OF_DONT_PATCH_ENCRYPTED_DEVICE="1"
-export OF_FLASHLIGHT_ENABLE="1"
-export OF_FL_PATH1="/sys/devices/virtual/camera/flash/rear_flash"
 export OF_KEEP_FORCED_ENCRYPTION="1"
 export OF_MAINTAINER="SeifHecker2099"
 export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
