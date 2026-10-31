@@ -36,7 +36,7 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export TARGET_ARCH="arm64"
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL="C"
-#FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/BOOT"
+export FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/BOOT"
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY"
 export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM"
 export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/VENDOR"
@@ -73,7 +73,7 @@ export PLATFORM_SECURITY_PATCH="2099-12-31"
 export PLATFORM_VERSION="16.1.0"
 export TW_DEFAULT_LANGUAGE="en"
 export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callback.sh"
-#FOX_DELETE_AROMAFM="1"
+export FOX_DELETE_AROMAFM="1"
 #OF_CLASSIC_LEDS_FUNCTION
 #OF_USE_GREEN_LED settings
 #OF_DEVICE_WITHOUT_PERSIST
