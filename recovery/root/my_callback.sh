@@ -23,7 +23,7 @@ function download_magisk(){
 export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
 download_magisk $FOX_USE_SPECIFIC_MAGISK_ZIP
 
-SOURCE_IMAGE="device/samsung/gtaxllte/addon/maintainer.png"
+SOURCE_IMAGE="device/samsung/gtaxllte/addons/maintainer.png"
 
 # Target location in the recovery ramdisk
 TARGET_DIR="$FOX_RAMDISK/twres/images/Default/About"
