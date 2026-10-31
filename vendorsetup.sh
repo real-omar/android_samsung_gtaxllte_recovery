@@ -27,6 +27,7 @@ export FOX_R11="1"
 export OF_MAINTAINER="SeifHecker2099"
 export FOX_BUILD_TYPE="Unofficial"
 export FOX_VERSION="R11.1"
+export FOX_VARIANT="crazy"
 export FOX_ADVANCED_SECURITY="1"
 export OF_USE_TWRP_SAR_DETECT="1"
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT="1"
@@ -63,7 +64,7 @@ export OF_DONT_PATCH_ENCRYPTED_DEVICE="1"
 export OF_KEEP_FORCED_ENCRYPTION="1"
 export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
 export OF_ALLOW_DISABLE_NAVBAR="1"
-export OF_SCREEN_H="1850" #needs to decrease, original value 1920
+export OF_SCREEN_H="1920"
 export OF_SKIP_MULTIUSER_FOLDERS_BACKUP="1"
 export OF_TWRP_COMPATIBILITY_MODE="1"
 export OF_USE_MAGISKBOOT="1"
@@ -77,7 +78,6 @@ export FOX_DELETE_AROMAFM="1"
 #OF_CLASSIC_LEDS_FUNCTION
 #OF_USE_GREEN_LED settings
 #OF_DEVICE_WITHOUT_PERSIST
-#FOX_VARIANT
 
 
 # use system (ROM) fingerprint where available
