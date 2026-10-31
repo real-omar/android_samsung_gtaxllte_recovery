@@ -36,6 +36,7 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export TARGET_ARCH="arm64"
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL="C"
+#FOX_RECOVERY_BOOT_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/BOOT"
 export FOX_RECOVERY_INSTALL_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/RECOVERY"
 export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM"
 export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/platform/13540000.dwmmc0/by-name/VENDOR"
@@ -62,7 +63,7 @@ export OF_DONT_PATCH_ENCRYPTED_DEVICE="1"
 export OF_KEEP_FORCED_ENCRYPTION="1"
 export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
 export OF_ALLOW_DISABLE_NAVBAR="1"
-export OF_SCREEN_H="1920"
+export OF_SCREEN_H="1900" #needs to decrease original value 1920
 export OF_SKIP_MULTIUSER_FOLDERS_BACKUP="1"
 export OF_TWRP_COMPATIBILITY_MODE="1"
 export OF_USE_MAGISKBOOT="1"
@@ -71,15 +72,11 @@ export OF_USE_NEW_MAGISKBOOT="1"
 export PLATFORM_SECURITY_PATCH="2099-12-31"
 export PLATFORM_VERSION="16.1.0"
 export TW_DEFAULT_LANGUAGE="en"
-#FOX_ADVANCED_SECURITY=1
+export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callback.sh"
+#FOX_DELETE_AROMAFM="1"
 #OF_CLASSIC_LEDS_FUNCTION
-#FOX_LOCAL_CALLBACK_SCRIPT
-#FOX_RECOVERY_BOOT_PARTITION
-#FOX_DELETE_AROMAFM
 #OF_USE_GREEN_LED settings
-#export OF_MAINTAINER_AVATAR="/home/yillie/avatar.png"
 #OF_DEVICE_WITHOUT_PERSIST
-#FOX_USE_SPECIFIC_MAGISK_ZIP="~/Magisk/Magisk-21.4.zip"
 #FOX_VARIANT
 
 
