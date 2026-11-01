@@ -27,7 +27,7 @@ export FOX_R11="1"
 export OF_MAINTAINER="SeifHecker2099"
 export FOX_BUILD_TYPE="Unofficial"
 export FOX_VERSION="R11.1"
-export FOX_VARIANT="crazy"
+export FOX_VARIANT="Crazy"
 export FOX_ADVANCED_SECURITY="1"
 export OF_USE_TWRP_SAR_DETECT="1"
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT="1"
@@ -75,7 +75,31 @@ export PLATFORM_VERSION="16.1.0"
 export TW_DEFAULT_LANGUAGE="en"
 export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callback.sh"
 export FOX_DELETE_AROMAFM="1"
+#export FOX_RESET_SETTINGS="0"
+
+# Magisk
+function download_magisk(){
+    # Usage: download_magisk <destination_path>
+    local DEST=$1
+    if [ -n "${DEST}" ]; then
+      if [ ! -e ${DEST} ]; then
+        echo "Downloading Magisk Version 30.1..."
+        local MAGISK_V27_URL="https://github.com/topjohnwu/Magisk/releases/download/v30.1/Magisk-v30.1.apk"
+        mkdir -p $(dirname ${DEST})
+        wget -q ${MAGISK_V27_URL} -O ${DEST} || wget ${MAGISK_V27_URL} -O ${DEST}
+        local RCODE=$?
+        if [ "$RCODE" = "0" ]; then
+          echo "Successfully Downloaded Magisk v30.1 to ${DEST}!"
+          echo "Done!"
+        else
+          echo "Failed to Download Magisk v30.1 to ${DEST}!"
+        fi
+      fi
+    fi
+}
 export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
+download_magisk $FOX_USE_SPECIFIC_MAGISK_ZIP
+
 #OF_CLASSIC_LEDS_FUNCTION
 #OF_USE_GREEN_LED settings
 #OF_DEVICE_WITHOUT_PERSIST
