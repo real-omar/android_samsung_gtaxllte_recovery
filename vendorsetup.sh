@@ -75,6 +75,7 @@ export PLATFORM_VERSION="16.1.0"
 export TW_DEFAULT_LANGUAGE="en"
 export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callback.sh"
 export FOX_DELETE_AROMAFM="1"
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
 #OF_CLASSIC_LEDS_FUNCTION
 #OF_USE_GREEN_LED settings
 #OF_DEVICE_WITHOUT_PERSIST
