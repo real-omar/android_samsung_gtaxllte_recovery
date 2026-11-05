@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from gtaxllte device
-$(call inherit-product, device/samsung/gtaxllte/device.mk)
+# $(call inherit-product, device/samsung/gtaxllte/device.mk)
 
 PRODUCT_DEVICE := gtaxllte
 PRODUCT_NAME := omni_gtaxllte
