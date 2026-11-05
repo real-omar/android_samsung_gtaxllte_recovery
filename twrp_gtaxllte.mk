@@ -7,8 +7,8 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, build/target/product/embedded.mk)
-$(call inherit-product, vendor/omni/config/common.mk)
+# $(call inherit-product, build/target/product/embedded.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from gtaxllte device
 $(call inherit-product, device/samsung/gtaxllte/device.mk)
