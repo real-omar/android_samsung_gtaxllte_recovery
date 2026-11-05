@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_gtaxllte.mk
+    $(LOCAL_DIR)/twrp_gtaxllte.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_gtaxllte-eng
+    twrp_gtaxllte-eng
