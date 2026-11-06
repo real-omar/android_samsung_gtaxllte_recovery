@@ -60,6 +60,7 @@ export FOX_USE_TAR_BINARY="1"
 export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
 export LZMA_RAMDISK_TARGETS="recovery"
 export OF_AB_DEVICE="0"
+export OF_USE_LEGACY_BATTERY_SERVICES="1"
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES="1"
 #export OF_DONT_PATCH_ENCRYPTED_DEVICE="1" always enabled
 #export OF_KEEP_FORCED_ENCRYPTION="1" always enabled
@@ -70,12 +71,12 @@ export OF_SKIP_MULTIUSER_FOLDERS_BACKUP="1"
 export OF_TWRP_COMPATIBILITY_MODE="1"
 #export OF_USE_MAGISKBOOT="1" enabled all the time
 #export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES="1"  enabled all the time
-#export OF_USE_NEW_MAGISKBOOT="1"
 #export PLATFORM_SECURITY_PATCH="2099-12-31"
 #export PLATFORM_VERSION="16.1.0"
 export TW_DEFAULT_LANGUAGE="en"
 export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callback.sh"
 export FOX_DELETE_AROMAFM="1"
+export OF_DEFAULT_TIMEZONE="WET-2"
 #export FOX_RESET_SETTINGS="0"
 
 # Magisk
