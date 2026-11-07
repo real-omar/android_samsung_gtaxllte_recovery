@@ -1,7 +1,5 @@
-current bugs: colors are inverted in screenshot
+current bugs:
 
 the ui is slightly shifted
-
-the home button doesnt wake the screen
 
 rebooting to recovery doesnt work properly
