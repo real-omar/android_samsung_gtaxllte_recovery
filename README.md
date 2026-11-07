@@ -1,4 +1,4 @@
-current bugs: colors are inverted
+current bugs: colors are inverted in screenshot
 
 the ui is slightly shifted
 
