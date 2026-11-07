@@ -42,6 +42,7 @@ export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/platform/13540000.dwmmc0/by-nam
 export OF_FLASHLIGHT_ENABLE="1"
 export OF_FL_PATH1="/system/flashlight"
 export OF_USE_GREEN_LED="0"
+export OF_CLASSIC_LEDS_FUNCTION="0"
 
 export FOX_ASH_IS_BASH="1"
 export FOX_REPLACE_BUSYBOX_PS="1"
@@ -67,7 +68,6 @@ export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
 export OF_ALLOW_DISABLE_NAVBAR="1"
 export OF_SCREEN_H="1920"
 export OF_STATUS_H="80"
-#export OF_SKIP_MULTIUSER_FOLDERS_BACKUP="1"
 
 export TW_DEFAULT_LANGUAGE="en"
 export OF_DEFAULT_TIMEZONE="WET-2"
@@ -75,6 +75,7 @@ export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callb
 export OF_ADVANCED_SECURITY="1"
 export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export FOX_DELETE_AROMAFM="1"
+#export OF_DEVICE_WITHOUT_PERSIST="1"
 #export FOX_RESET_SETTINGS="0"
 #OF_MANUAL_ROOT_VENDOR_ERROR_FIX" [NEW]
 
@@ -101,9 +102,8 @@ function download_magisk(){
 export FOX_USE_SPECIFIC_MAGISK_ZIP=~/Magisk/Magisk.zip
 download_magisk $FOX_USE_SPECIFIC_MAGISK_ZIP
 
-#OF_CLASSIC_LEDS_FUNCTION
-#OF_USE_GREEN_LED settings
-#OF_DEVICE_WITHOUT_PERSIST
+
+
 
 
 # use system (ROM) fingerprint where available
