@@ -21,9 +21,6 @@ FDEVICE="gtaxllte"
 
 # gtaxllte specific
 export TARGET_DEVICE_ALT="gtaxl, gtaxllte, gtaxlltexx"
-
-# R11
-#export FOX_R11="1"
 export OF_MAINTAINER="SeifHecker2099"
 export FOX_BUILD_TYPE="Unofficial"
 #export FOX_MAINTAINER_PATCH_VERSION="1"
@@ -59,7 +56,7 @@ export OF_USE_TWRP_SAR_DETECT="1"
 export OF_TWRP_COMPATIBILITY_MODE="1"
 export OF_DISABLE_MIUI_SPECIFIC_FEATURES="1"
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT="1"
-#export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
+export OF_NO_ADDITIONAL_MIUI_PROPS_CHECK=1
 export LZMA_RAMDISK_TARGETS="recovery"
 
 export FOX_AB_DEVICE="0"
@@ -75,7 +72,7 @@ export FOX_LOCAL_CALLBACK_SCRIPT="device/samsung/gtaxllte/recovery/root/my_callb
 export OF_ADVANCED_SECURITY="1"
 export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export FOX_DELETE_AROMAFM="1"
-#export OF_DEVICE_WITHOUT_PERSIST="1"
+export OF_DEVICE_WITHOUT_PERSIST="1"
 #export FOX_RESET_SETTINGS="0"
 #OF_MANUAL_ROOT_VENDOR_ERROR_FIX" [NEW]
 
