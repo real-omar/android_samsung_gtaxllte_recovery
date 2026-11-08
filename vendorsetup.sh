@@ -21,9 +21,9 @@ FDEVICE="gtaxllte"
 
 # gtaxllte specific
 export TARGET_DEVICE_ALT="gtaxl, gtaxllte, gtaxlltexx"
-export OF_MAINTAINER="SeifHecker2099"
+export OF_MAINTAINER="Omar"
 export FOX_BUILD_TYPE="Unofficial"
-#export FOX_MAINTAINER_PATCH_VERSION="1"
+export FOX_MAINTAINER_PATCH_VERSION="1"
 export FOX_VARIANT="Crazy"
 
 # Common
