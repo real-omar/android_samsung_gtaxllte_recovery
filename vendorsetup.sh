@@ -24,7 +24,7 @@ export TARGET_DEVICE_ALT="gtaxl, gtaxllte, gtaxlltexx"
 export OF_MAINTAINER="SeifHecker2099"
 export FOX_BUILD_TYPE="Unofficial"
 #export FOX_MAINTAINER_PATCH_VERSION="1"
-export FOX_VARIANT="crypto"
+export FOX_VARIANT="Crazy"
 
 # Common
 export TARGET_ARCH="arm64"
