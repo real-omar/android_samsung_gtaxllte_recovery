@@ -21,7 +21,7 @@ FDEVICE="gtaxllte"
 
 # gtaxllte specific
 export TARGET_DEVICE_ALT="gtaxl, gtaxllte, gtaxlltexx"
-export OF_MAINTAINER="SeifHecker2099"
+export OF_MAINTAINER="Omar"
 export FOX_BUILD_TYPE="Unofficial"
 #export FOX_MAINTAINER_PATCH_VERSION="1"
 export FOX_VARIANT="crypto"
@@ -64,7 +64,6 @@ export OF_USE_LEGACY_BATTERY_SERVICES="1"
 export OF_NO_TREBLE_COMPATIBILITY_CHECK="1"
 export OF_ALLOW_DISABLE_NAVBAR="1"
 export OF_SCREEN_H="1920"
-#export OF_STATUS_H="80"
 
 export TW_DEFAULT_LANGUAGE="en"
 export OF_DEFAULT_TIMEZONE="WET-2"
@@ -73,6 +72,7 @@ export OF_ADVANCED_SECURITY="1"
 export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 export FOX_DELETE_AROMAFM="1"
 export OF_DEVICE_WITHOUT_PERSIST="1"
+export OF_DEFAULT_KEYMASTER_VERSION="4.1"
 #export FOX_RESET_SETTINGS="0"
 #OF_MANUAL_ROOT_VENDOR_ERROR_FIX" [NEW]
 
