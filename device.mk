@@ -8,7 +8,7 @@
 LOCAL_PATH := device/samsung/gtaxllte
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 33
+#PRODUCT_TARGET_VNDK_VERSION := 33
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
