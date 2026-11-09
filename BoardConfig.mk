@@ -99,6 +99,13 @@ PLATFORM_SECURITY_PATCH := 2099-12-31
 VENDOR_SECURITY_PATCH := 2099-12-31
 PLATFORM_VERSION := 16.1.0
 
+# Additional binaries & libraries needed for recovery
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hardware.weaver@1.0
+
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.weaver@1.0.so
+
 # TWRP Configuration
 TW_DEVICE_VERSION := 1_SeifHecker2099
 TW_EXTRA_LANGUAGES := false
