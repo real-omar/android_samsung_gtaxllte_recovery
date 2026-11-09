@@ -4,7 +4,7 @@
 /system_image	emmc	/dev/block/platform/13540000.dwmmc0/by-name/SYSTEM	flags=flashimg=1
 /vendor		    ext4	/dev/block/platform/13540000.dwmmc0/by-name/VENDOR      flags=display="Vendor";backup=1;wipeingui
 /vendor_image   emmc    /dev/block/platform/13540000.dwmmc0/by-name/VENDOR  	flags=display="Vendor image";backup=1;flashimg=1
-/data		ext4	/dev/block/platform/13540000.dwmmc0/by-name/USERDATA	flags=encryptable=footer;length=-20480
+/data		ext4	/dev/block/platform/13540000.dwmmc0/by-name/USERDATA	    #flags=encryptable=footer;length=-20480
 /cache		ext4	/dev/block/platform/13540000.dwmmc0/by-name/CACHE
 /modem		emmc	/dev/block/platform/13540000.dwmmc0/by-name/RADIO	flags=backup=1;display="Modem"
 /modem-cdma	emmc	/dev/block/platform/13540000.dwmmc0/by-name/CDMA-RADIO	flags=backup=1;display="CDMA Modem";subpartitionof=/modem
