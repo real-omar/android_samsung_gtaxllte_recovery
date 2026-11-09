@@ -102,10 +102,16 @@ PLATFORM_VERSION := 16.1.0
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hardware.weaver@1.0 \
+    android.system.keystore2-V1-ndk_platform \
+    android.security.authorization-ndk_platform \
+    android.security.maintenance-ndk_platform.so \
     android.security.apc-ndk_platform
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.weaver@1.0.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.system.keystore2-V1-ndk_platform.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.security.authorization-ndk_platform.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.security.maintenance-ndk_platform.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.security.apc-ndk_platform.so
 
 # TWRP Configuration
