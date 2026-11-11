@@ -108,6 +108,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libkeystoreinfo \
     android.hardware.security.keymint-V1-ndk_platform \
     android.hardware.security.secureclock-V1-ndk_platform \
+    libsqlite \
     android.security.apc-ndk_platform
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
@@ -118,6 +119,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeystoreinfo.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.security.keymint-V1-ndk_platform.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.security.secureclock-V1-ndk_platform.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libsqlite.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.security.apc-ndk_platform.so
 
 # TWRP Configuration
