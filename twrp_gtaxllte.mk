@@ -15,6 +15,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from gtaxllte device
 $(call inherit-product, device/samsung/gtaxllte/device.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+
 PRODUCT_DEVICE := gtaxllte
 PRODUCT_NAME := twrp_gtaxllte
 PRODUCT_BRAND := samsung
