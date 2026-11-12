@@ -46,12 +46,12 @@ export FOX_REPLACE_BUSYBOX_PS="1"
 export FOX_USE_BASH_SHELL="1"
 export OF_USE_LZMA_COMPRESSION="1"
 #reduce the size for booting
-export FOX_REMOVE_BASH="1"
-export FOX_EXCLUDE_NANO_EDITOR="1"
-export FOX_DRASTIC_SIZE_REDUCTION="1"
-#export FOX_USE_NANO_EDITOR="1"
+#export FOX_REMOVE_BASH="1"
+#export FOX_DRASTIC_SIZE_REDUCTION="1"
+export FOX_USE_NANO_EDITOR="1"
+export FOX_EXCLUDE_NANO_EDITOR="0"
 export FOX_ENABLE_APP_MANAGER="1"
-export FOX_REMOVE_AAPT="1"
+export FOX_REMOVE_AAPT="0"
 export FOX_USE_TAR_BINARY="1"
 
 export FOX_USE_SAMSUNG_SPECIAL="1"
@@ -79,6 +79,12 @@ export OF_DEVICE_WITHOUT_PERSIST="1"
 export OF_DEFAULT_KEYMASTER_VERSION="4.1"
 #export FOX_RESET_SETTINGS="0"
 #OF_MANUAL_ROOT_VENDOR_ERROR_FIX" [NEW]
+
+# Decryption and format data (commented out until i fix encryption)
+#export FOX_ALLOW_EARLY_SETTINGS_LOAD="1"
+#export OF_NO_RELOAD_AFTER_DECRYPTION="1"
+#export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"
+#export OF_UNBIND_SDCARD_F2FS="1"
 
 # Magisk
 function download_magisk(){
