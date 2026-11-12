@@ -13,12 +13,6 @@ service keystore_auth /system/bin/keystore_auth
     disabled
     seclabel u:r:recovery:s0
 
-service keystore2 /system/bin/keystore2 /tmp/misc/keystore
-    user root
-    group root drmrpc readproc
-    disabled
-    seclabel u:r:recovery:s0
-
 
 #Add for FBE
 service gatekeeper-1-0 /system/bin/android.hardware.gatekeeper@1.0-service.software
@@ -74,10 +68,12 @@ service health-hal-2-1 /system/bin/android.hardware.health@2.1-service
     disabled
     user root
     
-    
- #   service vendor.keymaster-4-1 /vendor/bin/hw/android.hardware.keymaster@4.1-service
- #   interface android.hardware.keymaster@4.0::IKeymasterDevice default
- #   interface android.hardware.keymaster@4.1::IKeymasterDevice default
- #   class early_hal
- #   user system
- #   group system drmrpc
+on late-init
+    start keystore2
+
+service keystore2 /system/bin/keystore2 /tmp/misc/keystore
+    class early_hal
+    user root
+    group keystore readproc log
+    writepid /dev/cpuset/foreground/tasks
+    seclabel u:r:recovery:s0
