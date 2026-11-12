@@ -83,7 +83,7 @@ export OF_DEFAULT_KEYMASTER_VERSION="4.1"
 # Decryption and format data (commented out until i fix encryption)
 #export FOX_ALLOW_EARLY_SETTINGS_LOAD="1"
 #export OF_NO_RELOAD_AFTER_DECRYPTION="1"
-#export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"
+export OF_FIX_DECRYPTION_ON_DATA_MEDIA="1"
 #export OF_UNBIND_SDCARD_F2FS="1"
 
 # Magisk
